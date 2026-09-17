@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T23:42:01.636Z",
+  "generated_at": "2026-09-17T23:48:30.731Z",
   "actions": [
     {
       "id": "AN01",
@@ -17,7 +17,7 @@
       "id": "AN02",
       "type": "action",
       "description": "complete case studies, Inception and TISE",
-      "owner": "",
+      "owner": "Simon",
       "status": "Outstanding",
       "rag": "Red",
       "risk": 3,
