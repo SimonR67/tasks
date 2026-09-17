@@ -1,11 +1,13 @@
 {
-  "generated_at": "2026-09-17T17:00:05.070Z",
+  "generated_at": "2026-09-17T23:42:01.636Z",
   "actions": [
     {
       "id": "AN01",
       "type": "action",
       "description": "complete case studies, TISE",
       "owner": "Simon",
+      "status": "Outstanding",
+      "rag": "Red",
       "risk": 3,
       "due_date": "21-09-2026",
       "raised": "17-09-2026",
@@ -16,6 +18,8 @@
       "type": "action",
       "description": "complete case studies, Inception and TISE",
       "owner": "",
+      "status": "Outstanding",
+      "rag": "Red",
       "risk": 3,
       "due_date": "21-09-2026",
       "raised": "17-09-2026",
