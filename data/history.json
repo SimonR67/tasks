@@ -11,6 +11,12 @@
       "counts": {
         "null": null
       }
+    },
+    {
+      "timestamp": "2026-09-17T23:42:01.636Z",
+      "counts": {
+        "Simon": 1
+      }
     }
   ]
 }
