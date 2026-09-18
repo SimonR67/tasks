@@ -1,29 +1,60 @@
 {
-  "generated_at": "2026-09-18T10:44:12.457Z",
+  "generated_at": "2026-09-18T17:00:04.763Z",
   "actions": [
     {
-      "id": "AN01",
-      "type": "action",
-      "description": "complete case studies, TISE",
-      "owner": "Simon",
-      "status": "Outstanding",
-      "rag": "Red",
-      "risk": 3,
-      "due_date": "21-09-2026",
-      "raised": "17-09-2026",
-      "meeting_source": "Management meeting 17-09-2026"
+      "id": "ACT-005",
+      "type": "Action Item",
+      "description": "Present financial report: monthly YTD cost & year-end forecast to Kyle",
+      "owner": "Simon Raitt",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-09-17",
+      "meeting_source": "Management Meeting - Standup"
     },
     {
-      "id": "AN02",
-      "type": "action",
-      "description": "complete case studies, Inception and TISE",
-      "owner": "Simon",
-      "status": "Outstanding",
-      "rag": "Red",
-      "risk": 3,
-      "due_date": "21-09-2026",
-      "raised": "17-09-2026",
-      "meeting_source": "Management meeting 17-09-2026"
+      "id": "ACT-006",
+      "type": "Action Item",
+      "description": "Book workshop travel: secure flight tickets for the 30th",
+      "owner": "Pete Callaghan",
+      "status": "Open",
+      "risk": 1,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-09-17",
+      "meeting_source": "Management Meeting - Standup"
+    },
+    {
+      "id": "ACT-007",
+      "type": "Action Item",
+      "description": "Collate training data: budget requests and requirements",
+      "owner": "Simon Raitt",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-09-17",
+      "meeting_source": "Management Meeting - Standup"
+    },
+    {
+      "id": "D-002",
+      "type": "Decision",
+      "description": "Future meeting invites to include a populated, linked agenda (date, attendees, chair, previous minutes)",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-09-17",
+      "meeting_source": "Management Meeting - Standup"
+    },
+    {
+      "id": "D-003",
+      "type": "Decision",
+      "description": "Handbook redesign into PowerPoint template with mission statement (English and Polish)",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-09-17",
+      "meeting_source": "Management Meeting - Standup"
     }
   ]
 }
