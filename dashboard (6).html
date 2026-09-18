@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Governance Register</title>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<style>
+  :root{
+    --ink:#1B2430;
+    --ink-soft:#4A5568;
+    --line:#D8DCE1;
+    --paper:#EEF1F4;
+    --card:#FFFFFF;
+    --red:#C0392B;
+    --red-bg:#FBE9E7;
+    --amber:#B7791F;
+    --amber-bg:#FDF3DA;
+    --green:#2E7D4F;
+    --green-bg:#E4F3E9;
+    --accent:#2C4A6E;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+  }
+  header{
+    background:var(--ink);
+    color:#fff;
+    padding:28px 40px 22px;
+  }
+  header .eyebrow{
+    font-size:13px;
+    color:#9FB3C8;
+    margin-bottom:4px;
+  }
+  header h1{
+    margin:0;
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    font-weight:600;
+    font-size:28px;
+    letter-spacing:0.2px;
+  }
+  header .meta{
+    margin-top:6px;
+    font-size:13px;
+    color:#C3D0DD;
+  }
+  main{
+    max-width:1180px;
+    margin:0 auto;
+    padding:28px 40px 60px;
+  }
+  .tabs{
+    display:flex;
+    gap:4px;
+    border-bottom:2px solid var(--line);
+    overflow-x:auto;
+    margin-bottom:0;
+  }
+  .tab{
+    padding:10px 18px;
+    font-size:14px;
+    cursor:pointer;
+    color:var(--ink-soft);
+    border-bottom:2px solid transparent;
+    margin-bottom:-2px;
+    white-space:nowrap;
+    user-select:none;
+  }
+  .tab .count{
+    display:inline-block;
+    margin-left:6px;
+    font-size:12px;
+    color:#8B96A3;
+  }
+  .tab.active{
+    color:var(--ink);
+    font-weight:600;
+    border-bottom-color:var(--accent);
+  }
+  .panel{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-top:none;
+    padding:0;
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+  }
+  thead th{
+    text-align:left;
+    padding:12px 16px;
+    font-size:12px;
+    color:var(--ink-soft);
+    font-weight:600;
+    border-bottom:1px solid var(--line);
+  }
+  tbody td{
+    padding:14px 16px;
+    border-bottom:1px solid var(--line);
+    vertical-align:top;
+  }
+  tbody tr:last-child td{border-bottom:none;}
+  .desc{max-width:340px;line-height:1.4;}
+  .desc .id{color:#8B96A3;font-size:12px;display:block;margin-bottom:2px;}
+  .risk{
+    display:inline-block;
+    width:22px;height:22px;
+    border-radius:50%;
+    text-align:center;
+    line-height:22px;
+    font-size:12px;
+    font-weight:600;
+    color:#fff;
+  }
+  .status-btn{
+    border:none;
+    border-radius:4px;
+    padding:7px 14px;
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+    min-width:118px;
+  }
+  .status-outstanding{background:var(--red-bg);color:var(--red);}
+  .status-in-progress{background:var(--amber-bg);color:var(--amber);}
+  .status-done{background:var(--green-bg);color:var(--green);}
+  .empty{
+    padding:40px;
+    text-align:center;
+    color:var(--ink-soft);
+    font-size:14px;
+  }
+  .chart-section{
+    margin-top:44px;
+  }
+  .chart-section h2{
+    font-family:Georgia,"Iowan Old Style",serif;
+    font-size:19px;
+    font-weight:600;
+    margin:0 0 4px;
+  }
+  .chart-section p{
+    margin:0 0 16px;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+  .chart-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    padding:20px;
+  }
+  .chart-card svg{width:100%;height:auto;display:block;}
+  .chart-legend{margin-top:10px;}
+  #login-screen{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+  }
+  #login-screen .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    padding:40px 44px;
+    max-width:360px;
+  }
+  #login-screen h1{
+    font-family:Georgia,"Iowan Old Style",serif;
+    font-size:22px;
+    margin:0 0 6px;
+  }
+  #login-screen p{
+    font-size:13px;
+    color:var(--ink-soft);
+    margin:0 0 24px;
+  }
+  #login-error{
+    margin-top:16px;
+    font-size:13px;
+    color:var(--red);
+    display:none;
+  }
+  #app{display:none;}
+</style>
+</head>
+<body>
+
+<div id="login-screen">
+  <div class="card">
+    <h1>Governance Register</h1>
+    <p>Sign in with your softpapaya.com Google account to continue.</p>
+    <div id="g_id_signin"></div>
+    <div id="login-error">That account isn't on softpapaya.com — sign in with your work Google account instead.</div>
+  </div>
+</div>
+
+<div id="app">
+<header>
+  <div class="eyebrow">Management Actions</div>
+  <h1>Governance Register</h1>
+  <div class="meta" id="updated-meta">Loading data…</div>
+</header>
+
+<main>
+  <div class="tabs" id="tabs"></div>
+  <div class="panel" id="panel"></div>
+
+  <div class="chart-section">
+    <h2>Outstanding actions, last 3 months</h2>
+    <p>Weekly count of open actions (Outstanding + In Progress) per team member. New owners appear automatically.</p>
+    <div class="chart-card">
+      <div id="trend-chart"></div>
+    </div>
+  </div>
+</main>
+</div>
+
+<script>
+/* ---------------------------------------------------------
+   CONFIG — point these at your n8n endpoints once deployed
+--------------------------------------------------------- */
+const GET_DATA_ENDPOINT = "https://simonraitt.app.n8n.cloud/webhook/governance-data";
+const STATUS_UPDATE_WEBHOOK = "https://simonraitt.app.n8n.cloud/webhook/governance-status-update";
+const CURRENT_USER = null; // e.g. "Simon" — if set, that tab opens by default
+
+/* ---------------------------------------------------------
+   AUTH — Google sign-in gate, restricted to this domain.
+   This is a soft gate: it hides the UI from anyone without a
+   softpapaya.com Google account, but data.json/history.json
+   are still publicly readable at their raw GitHub URLs by
+   anyone who has those links directly, since GitHub Pages has
+   no server to enforce real access control.
+--------------------------------------------------------- */
+const GOOGLE_CLIENT_ID = "YOUR_GOOGLE_OAUTH_CLIENT_ID.apps.googleusercontent.com";
+const ALLOWED_DOMAIN = "softpapaya.com";
+
+function decodeJwt(token){
+  const payload = token.split(".")[1];
+  const json = atob(payload.replace(/-/g, "+").replace(/_/g, "/"));
+  return JSON.parse(decodeURIComponent(escape(json)));
+}
+
+function handleGoogleSignIn(response){
+  const claims = decodeJwt(response.credential);
+  const emailDomain = (claims.email || "").split("@")[1] || "";
+  const isAllowed = claims.hd === ALLOWED_DOMAIN || emailDomain === ALLOWED_DOMAIN;
+  if(!isAllowed){
+    document.getElementById("login-error").style.display = "block";
+    return;
+  }
+  // The raw ID token is what gets sent to n8n on every request so it can be
+  // verified server-side each time — not just the decoded email, which
+  // anyone could fake client-side.
+  sessionStorage.setItem("gr_id_token", response.credential);
+  sessionStorage.setItem("gr_auth_email", claims.email);
+  showApp();
+}
+
+function showApp(){
+  document.getElementById("login-screen").style.display = "none";
+  document.getElementById("app").style.display = "block";
+  loadData();
+}
+
+window.onload = function(){
+  // Already signed in this session — skip straight to the app
+  const cached = sessionStorage.getItem("gr_auth_email");
+  if(cached && cached.endsWith("@" + ALLOWED_DOMAIN)){
+    showApp();
+    return;
+  }
+  if(window.google && window.google.accounts && window.google.accounts.id){
+    google.accounts.id.initialize({
+      client_id: GOOGLE_CLIENT_ID,
+      callback: handleGoogleSignIn,
+      hd: ALLOWED_DOMAIN
+    });
+    google.accounts.id.renderButton(
+      document.getElementById("g_id_signin"),
+      { theme: "outline", size: "large", text: "signin_with" }
+    );
+  }
+};
+
+
+/* ---------------------------------------------------------
+   DEMO DATA — used only if data.json isn't reachable yet,
+   so the dashboard is viewable before the n8n pipeline is wired up
+--------------------------------------------------------- */
+const DEMO_DATA = {
+  generated_at: new Date().toISOString(),
+  actions: [
+    { id:"GR-001", type:"Action", description:"Finalise Q3 budget reforecast", owner:"Simon", status:"In Progress", risk:4, due_date:"2026-09-25", raised:"2026-08-01", meeting_source:"Finance Manager" },
+    { id:"GR-002", type:"Action", description:"Sign off new supplier contract", owner:"Simon", status:"Outstanding", risk:5, due_date:"2026-09-19", raised:"2026-08-10", meeting_source:"Dev Manager" },
+    { id:"GR-003", type:"Risk", description:"Migrate legacy auth service", owner:"Priya", status:"Outstanding", risk:5, due_date:"2026-09-30", raised:"2026-08-05", meeting_source:"Dev Manager" },
+    { id:"GR-004", type:"Action", description:"Publish updated brand guidelines", owner:"Priya", status:"Done", risk:2, due_date:"2026-09-10", raised:"2026-07-20", meeting_source:"Research Manager" },
+    { id:"GR-005", type:"Action", description:"Book Q4 all-hands venue", owner:"Tom", status:"In Progress", risk:1, due_date:"2026-09-28", raised:"2026-08-15", meeting_source:"Personal Email Manager" },
+    { id:"GR-006", type:"Risk", description:"Review data retention policy", owner:"Tom", status:"Outstanding", risk:3, due_date:"2026-10-02", raised:"2026-08-25", meeting_source:"Dev Manager" }
+  ]
+};
+
+const DEMO_HISTORY = { snapshots: (() => {
+  // Synthesised twice-daily history for the last 12 weeks, so the trend chart
+  // has something to show before real n8n snapshots exist.
+  const owners = { Simon:2, Priya:1, Tom:0 };
+  const out = [];
+  const today = new Date();
+  for(let i = 84; i >= 0; i -= 3.5){
+    const d = new Date(today); d.setDate(d.getDate() - i);
+    const counts = {};
+    Object.keys(owners).forEach(o => {
+      if(o === "Tom" && i > 42) return; // Tom "joins" partway through, to demo dynamic lines
+      counts[o] = Math.max(0, Math.round(2 + Math.sin(i/10) * 2 + (owners[o])));
+    });
+    out.push({ timestamp: d.toISOString(), counts });
+  }
+  return out;
+})() };
+
+let ALL_ACTIONS = [];
+let HISTORY = [];
+let ACTIVE_TAB = null;
+
+const STATUS_STEPS = ["Outstanding","In Progress","Done"];
+const STATUS_CLASS = { "Outstanding":"status-outstanding", "In Progress":"status-in-progress", "Done":"status-done" };
+// Prefer the sheet's own RAG column (Red/Amber/Green) when present; fall back to the numeric risk score
+const RAG_TEXT_COLOR = { "red":"#C0392B", "amber":"#B7791F", "green":"#2E7D4F" };
+const RISK_NUMBER_COLOR = { 5:"#C0392B", 4:"#C0392B", 3:"#B7791F", 2:"#2E7D4F", 1:"#2E7D4F" };
+function ragColor(a){
+  const fromText = a.rag && RAG_TEXT_COLOR[String(a.rag).toLowerCase()];
+  return fromText || RISK_NUMBER_COLOR[a.risk] || "#999";
+}
+
+async function loadData(){
+  const token = sessionStorage.getItem("gr_id_token");
+  let usedDemo = false;
+  try{
+    const res = await fetch(GET_DATA_ENDPOINT, {
+      cache: "no-store",
+      headers: { "Authorization": "Bearer " + token }
+    });
+    if(res.status === 401){
+      // Token expired or rejected server-side — force a fresh sign-in
+      sessionStorage.removeItem("gr_id_token");
+      sessionStorage.removeItem("gr_auth_email");
+      document.getElementById("app").style.display = "none";
+      document.getElementById("login-screen").style.display = "flex";
+      document.getElementById("login-error").textContent = "Your session expired — please sign in again.";
+      document.getElementById("login-error").style.display = "block";
+      return;
+    }
+    if(!res.ok) throw new Error("data endpoint error");
+    const json = await res.json();
+    ALL_ACTIONS = json.actions || [];
+    HISTORY = json.snapshots || [];
+    setUpdatedMeta(json.generated_at, false);
+  }catch(e){
+    ALL_ACTIONS = DEMO_DATA.actions;
+    HISTORY = DEMO_HISTORY.snapshots;
+    setUpdatedMeta(DEMO_DATA.generated_at, true);
+    usedDemo = true;
+  }
+
+  render();
+}
+
+function setUpdatedMeta(timestamp, isDemo){
+  const el = document.getElementById("updated-meta");
+  const d = new Date(timestamp);
+  const label = d.toLocaleString(undefined, { day:"numeric", month:"short", hour:"2-digit", minute:"2-digit" });
+  el.textContent = isDemo
+    ? "Showing sample data — connect data.json to see live actions · sample as of " + label
+    : "Last updated " + label;
+}
+
+function owners(){
+  const set = new Set(ALL_ACTIONS.map(a => a.owner).filter(o => o && o.trim()));
+  return Array.from(set).sort();
+}
+
+function render(){
+  const tabsEl = document.getElementById("tabs");
+  const ownerList = owners();
+  if(!ACTIVE_TAB || !ownerList.includes(ACTIVE_TAB)){
+    ACTIVE_TAB = (CURRENT_USER && ownerList.includes(CURRENT_USER)) ? CURRENT_USER : ownerList[0];
+  }
+
+  tabsEl.innerHTML = "";
+  ownerList.forEach(owner => {
+    const openCount = ALL_ACTIONS.filter(a => a.owner === owner && a.status !== "Done").length;
+    const tab = document.createElement("div");
+    tab.className = "tab" + (owner === ACTIVE_TAB ? " active" : "");
+    tab.innerHTML = `${owner}<span class="count">${openCount}</span>`;
+    tab.onclick = () => { ACTIVE_TAB = owner; render(); };
+    tabsEl.appendChild(tab);
+  });
+
+  renderTable();
+  renderChart();
+}
+
+function renderTable(){
+  const panel = document.getElementById("panel");
+  const rows = ALL_ACTIONS.filter(a => a.owner === ACTIVE_TAB);
+
+  if(rows.length === 0){
+    panel.innerHTML = `<div class="empty">No actions logged for ${ACTIVE_TAB}.</div>`;
+    return;
+  }
+
+  const rowsHtml = rows.map(a => `
+    <tr>
+      <td class="desc">
+        <span class="id">${a.id} · ${a.type}</span>
+        ${a.description}
+      </td>
+      <td>${a.meeting_source || "—"}</td>
+      <td><span class="risk" style="background:${ragColor(a)}">${a.risk}</span></td>
+      <td>${formatDate(a.due_date)}</td>
+      <td>
+        <button class="status-btn ${STATUS_CLASS[a.status]}" onclick="cycleStatus('${a.id}')">
+          ${a.status}
+        </button>
+      </td>
+    </tr>
+  `).join("");
+
+  panel.innerHTML = `
+    <table>
+      <thead>
+        <tr>
+          <th>Action</th>
+          <th>Meeting</th>
+          <th>Risk</th>
+          <th>Due</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>${rowsHtml}</tbody>
+    </table>
+  `;
+}
+
+function formatDate(iso){
+  if(!iso) return "—";
+  const d = new Date(iso);
+  if(isNaN(d)) return iso;
+  return d.toLocaleDateString(undefined, { day:"numeric", month:"short" });
+}
+
+async function cycleStatus(id){
+  const action = ALL_ACTIONS.find(a => a.id === id);
+  if(!action) return;
+  const next = STATUS_STEPS[(STATUS_STEPS.indexOf(action.status) + 1) % STATUS_STEPS.length];
+  const previous = action.status;
+  action.status = next; // optimistic UI update
+  renderTable();
+  renderChart();
+
+  try{
+    await fetch(STATUS_UPDATE_WEBHOOK, {
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json",
+        "Authorization":"Bearer " + sessionStorage.getItem("gr_id_token")
+      },
+      body: JSON.stringify({ id, status: next })
+    });
+  }catch(e){
+    action.status = previous; // roll back if the write fails
+    renderTable();
+    renderChart();
+    alert("Couldn't save that update — check your connection and try again.");
+  }
+}
+
+function renderChart(){
+  const weeks = last12Weeks();
+  // owners are whoever has appeared in ANY snapshot in the window, plus anyone
+  // in the live sheet now — so a brand-new owner with no history yet still gets a line
+  const historyOwners = new Set();
+  HISTORY.forEach(s => Object.keys(s.counts || {}).forEach(o => { if(o && o !== "null") historyOwners.add(o); }));
+  owners().forEach(o => historyOwners.add(o));
+  const ownerList = Array.from(historyOwners).sort();
+
+  const series = ownerList.map((owner, i) => ({
+    name: owner,
+    color: palette(i),
+    values: weeks.map(w => nearestSnapshotCount(owner, w.end))
+  }));
+
+  document.getElementById("trend-chart").innerHTML = buildLineChartSVG(series, weeks.map(w => w.label));
+}
+
+// Hand-rolled inline SVG line chart — no external chart library, so nothing
+// can fail to load. Draws gridlines, axis labels, one line per series (with
+// gaps left blank rather than interpolated), and a legend below.
+function buildLineChartSVG(series, xLabels){
+  const W = 900, H = 320;
+  const padL = 34, padR = 16, padT = 16, padB = 34;
+  const plotW = W - padL - padR;
+  const plotH = H - padT - padB;
+  const n = xLabels.length;
+
+  let maxVal = 1;
+  series.forEach(s => s.values.forEach(v => { if(v != null && v > maxVal) maxVal = v; }));
+  maxVal = Math.max(1, Math.ceil(maxVal * 1.2));
+
+  const xAt = i => n > 1 ? padL + (i * (plotW / (n - 1))) : padL + plotW / 2;
+  const yAt = v => padT + plotH - (v / maxVal) * plotH;
+
+  const gridCount = 4;
+  let gridLines = "", yLabels = "";
+  for(let g = 0; g <= gridCount; g++){
+    const val = Math.round((maxVal / gridCount) * g);
+    const y = yAt(val);
+    gridLines += `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="#E5E8EB" stroke-width="1"/>`;
+    yLabels += `<text x="${padL - 8}" y="${y + 4}" text-anchor="end" font-size="11" fill="#8B96A3">${val}</text>`;
+  }
+
+  let xLabelsSvg = "";
+  xLabels.forEach((label, i) => {
+    if(n > 8 && i % 2 !== 0 && i !== n - 1) return;
+    xLabelsSvg += `<text x="${xAt(i)}" y="${H - padB + 18}" text-anchor="middle" font-size="11" fill="#8B96A3">${label}</text>`;
+  });
+
+  let paths = "", points = "";
+  series.forEach(s => {
+    let segment = [];
+    const flush = () => {
+      if(segment.length > 1){
+        const d = segment.map((p, idx) => (idx === 0 ? "M" : "L") + p.x + "," + p.y).join(" ");
+        paths += `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
+      }
+      segment = [];
+    };
+    s.values.forEach((v, i) => {
+      if(v == null){ flush(); return; }
+      const p = { x: xAt(i), y: yAt(v) };
+      segment.push(p);
+      points += `<circle cx="${p.x}" cy="${p.y}" r="3.5" fill="${s.color}"/>`;
+    });
+    flush();
+  });
+
+  const legend = series.map(s => `
+    <span style="display:inline-flex;align-items:center;gap:6px;margin-right:16px;font-size:12px;color:var(--ink-soft);">
+      <span style="width:10px;height:10px;border-radius:50%;background:${s.color};display:inline-block;"></span>${s.name}
+    </span>`).join("");
+
+  const empty = series.length === 0
+    ? `<text x="${W/2}" y="${H/2}" text-anchor="middle" font-size="13" fill="#8B96A3">No history yet</text>`
+    : "";
+
+  return `
+    <svg viewBox="0 0 ${W} ${H}">
+      ${gridLines}${yLabels}${xLabelsSvg}${paths}${points}${empty}
+    </svg>
+    <div class="chart-legend">${legend}</div>
+  `;
+}
+
+function last12Weeks(){
+  const out = [];
+  const today = new Date();
+  for(let i = 11; i >= 0; i--){
+    const end = new Date(today);
+    end.setDate(end.getDate() - (i * 7));
+    out.push({
+      end,
+      label: end.toLocaleDateString(undefined, { day:"numeric", month:"short" })
+    });
+  }
+  return out;
+}
+
+// finds the most recent n8n snapshot at or before this week's end date,
+// and returns that owner's open-count from it (null if no snapshot exists yet
+// for that owner — Chart.js leaves the line blank rather than drawing a false zero)
+function nearestSnapshotCount(owner, weekEnd){
+  let best = null;
+  let bestTime = -Infinity;
+  HISTORY.forEach(s => {
+    const t = new Date(s.timestamp).getTime();
+    if(t <= weekEnd.getTime() && t > bestTime && s.counts && Object.prototype.hasOwnProperty.call(s.counts, owner)){
+      best = s.counts[owner];
+      bestTime = t;
+    }
+  });
+  return best;
+}
+
+function palette(i){
+  const colors = ["#2C4A6E","#C0392B","#2E7D4F","#B7791F","#6B4C9A","#1A7A7A","#8A4B6B","#5C6B73"];
+  return colors[i % colors.length];
+}
+
+</script>
+</body>
+</html>
