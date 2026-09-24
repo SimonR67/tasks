@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-24T07:00:05.079Z",
+  "generated_at": "2026-09-24T17:00:05.303Z",
   "actions": [
     {
       "id": "ACT-005",
       "type": "Action Item",
       "description": "Present financial report: monthly YTD cost & year-end forecast to Kyle",
       "owner": "Simon Raitt",
-      "status": "Open",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Not specified in minutes",
       "raised": "2026-09-17",
-      "meeting_source": "Management Meeting - Standup"
+      "meeting_source": ""
     },
     {
       "id": "ACT-006",
       "type": "Action Item",
       "description": "Book workshop travel: secure flight tickets for the 30th",
       "owner": "Pete Callaghan",
-      "status": "Open",
-      "risk": 1,
+      "status": "Closed",
+      "risk": 0,
       "due_date": "Not specified in minutes",
       "raised": "2026-09-17",
-      "meeting_source": "Management Meeting - Standup"
+      "meeting_source": ""
     },
     {
       "id": "ACT-007",
@@ -32,7 +32,7 @@
       "risk": 0,
       "due_date": "Not specified in minutes",
       "raised": "2026-09-17",
-      "meeting_source": "Management Meeting - Standup"
+      "meeting_source": ""
     },
     {
       "id": "D-002",
@@ -43,7 +43,7 @@
       "risk": 0,
       "due_date": "—",
       "raised": "2026-09-17",
-      "meeting_source": "Management Meeting - Standup"
+      "meeting_source": ""
     },
     {
       "id": "D-003",
@@ -54,7 +54,7 @@
       "risk": 0,
       "due_date": "—",
       "raised": "2026-09-17",
-      "meeting_source": "Management Meeting - Standup"
+      "meeting_source": ""
     }
   ]
 }
