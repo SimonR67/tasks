@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T07:00:04.779Z",
+  "generated_at": "2026-09-25T17:00:03.946Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -54,6 +54,149 @@
       "risk": 0,
       "due_date": "—",
       "raised": "2026-09-17",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-008",
+      "type": "Action Item",
+      "description": "Ratify headcount plan: get Craig to confirm Q5 team numbers/roles by email",
+      "owner": "Simon Raitt",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified",
+      "raised": "2026-09-24",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-009",
+      "type": "Action Item",
+      "description": "Modify forecast report: simplify YTD cost & year forecast report for Q5 (per Kyle)",
+      "owner": "Simon Raitt",
+      "status": "In Progress",
+      "risk": 0,
+      "due_date": "Not specified",
+      "raised": "2026-09-24",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-010",
+      "type": "Action Item",
+      "description": "Assist Jason with finalizing remaining two website value propositions",
+      "owner": "Simon Raitt",
+      "status": "In Progress",
+      "risk": 0,
+      "due_date": "Friday morning",
+      "raised": "2026-09-24",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-011",
+      "type": "Action Item",
+      "description": "Tidy HR forms: finalize employee handbook & emergency contact forms with correct branding",
+      "owner": "Ania Balicka",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified",
+      "raised": "2026-09-24",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-012",
+      "type": "Action Item",
+      "description": "Chase Leading Resolutions: contact Ken re: two opportunities for Hristo",
+      "owner": "Simon Raitt",
+      "status": "Closed",
+      "risk": 0,
+      "due_date": "Not specified",
+      "raised": "2026-09-24",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-013",
+      "type": "Action Item",
+      "description": "Chase Michael Bateman re: Hristo's part-time involvement on C5 project",
+      "owner": "Simon Raitt",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified",
+      "raised": "2026-09-24",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-014",
+      "type": "Action Item",
+      "description": "Create bench messaging: marketing messaging for Microsoft tech stack bench",
+      "owner": "Simon Raitt",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified",
+      "raised": "2026-09-24",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-015",
+      "type": "Action Item",
+      "description": "Deactivate Martin Balaza's timesheet until new work orders assigned",
+      "owner": "Slawomir Panic",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified",
+      "raised": "2026-09-24",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-016",
+      "type": "Action Item",
+      "description": "Recover debt: speak with Michael (Fable) Friday re: payment owed since June",
+      "owner": "Simon Raitt",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Friday",
+      "raised": "2026-09-24",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-017",
+      "type": "Action Item",
+      "description": "Gather website content: collect photos/bios from selected team by next Wednesday",
+      "owner": "Ania Balicka",
+      "status": "In Progress",
+      "risk": 0,
+      "due_date": "Next Wednesday",
+      "raised": "2026-09-24",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-018",
+      "type": "Action Item",
+      "description": "Fix two-factor authentication blocking domain access",
+      "owner": "Simon Raitt",
+      "status": "Closed",
+      "risk": 0,
+      "due_date": "Not specified",
+      "raised": "2026-09-24",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-019",
+      "type": "Action Item",
+      "description": "Plan office decor: recommend quantity/size/placement of wall prints; consult reception on installation",
+      "owner": "Slawomir Panic",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified",
+      "raised": "2026-09-24",
+      "meeting_source": ""
+    },
+    {
+      "id": "D-004",
+      "type": "Decision",
+      "description": "Staff notified of website photo use via informal group chat notice, not written consent",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-09-24",
       "meeting_source": ""
     }
   ]
