@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T07:00:04.380Z",
+  "generated_at": "2026-09-28T17:00:04.354Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -61,7 +61,7 @@
       "type": "Action Item",
       "description": "Ratify headcount plan: get Craig to confirm Q5 team numbers/roles by email",
       "owner": "Simon Raitt",
-      "status": "Open",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Not specified",
       "raised": "2026-09-24",
@@ -94,7 +94,7 @@
       "type": "Action Item",
       "description": "Tidy HR forms: finalize employee handbook & emergency contact forms with correct branding",
       "owner": "Ania Balicka",
-      "status": "Open",
+      "status": "In Progress",
       "risk": 0,
       "due_date": "Not specified",
       "raised": "2026-09-24",
@@ -127,7 +127,7 @@
       "type": "Action Item",
       "description": "Create bench messaging: marketing messaging for Microsoft tech stack bench",
       "owner": "Simon Raitt",
-      "status": "Open",
+      "status": "In Progress",
       "risk": 0,
       "due_date": "Not specified",
       "raised": "2026-09-24",
@@ -149,7 +149,7 @@
       "type": "Action Item",
       "description": "Recover debt: speak with Michael (Fable) Friday re: payment owed since June",
       "owner": "Simon Raitt",
-      "status": "Open",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Friday",
       "raised": "2026-09-24",
