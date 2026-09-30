@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T07:00:04.668Z",
+  "generated_at": "2026-09-30T17:00:04.205Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -160,7 +160,7 @@
       "type": "Action Item",
       "description": "Gather website content: collect photos/bios from selected team by next Wednesday",
       "owner": "Ania Balicka",
-      "status": "In Progress",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Next Wednesday",
       "raised": "2026-09-24",
