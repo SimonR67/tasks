@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T17:00:04.205Z",
+  "generated_at": "2026-10-01T07:00:04.294Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -83,7 +83,7 @@
       "type": "Action Item",
       "description": "Assist Jason with finalizing remaining two website value propositions",
       "owner": "Simon Raitt",
-      "status": "In Progress",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Friday morning",
       "raised": "2026-09-24",
