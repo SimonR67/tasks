@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T07:00:06.332Z",
+  "generated_at": "2026-10-15T17:00:03.997Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -116,7 +116,7 @@
       "type": "Action Item",
       "description": "Chase Michael Bateman re: Hristo's part-time involvement on C5 project",
       "owner": "Simon Raitt",
-      "status": "Open",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Not specified",
       "raised": "2026-09-24",
