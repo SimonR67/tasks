@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T07:00:05.333Z",
+  "generated_at": "2026-10-19T17:00:04.385Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -197,6 +197,28 @@
       "risk": 0,
       "due_date": "—",
       "raised": "2026-09-24",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-020",
+      "type": "Action Item",
+      "description": "Craft Support Arrangement: Develop a Nino support arrangement involving dashboards for Amanda.",
+      "owner": "Pete Callaghan, Slawomir Panic",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "",
+      "raised": "2026-10-15",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-021",
+      "type": "Action Item",
+      "description": "Prepare Amanda Meeting: Condense existing technical reports into simple discussion points for the upcoming Q5 meeting",
+      "owner": "Jason Hill, Pete Callaghan",
+      "status": "In Progress",
+      "risk": 0,
+      "due_date": "",
+      "raised": "2026-10-15",
       "meeting_source": ""
     }
   ]
