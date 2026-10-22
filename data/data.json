@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T07:00:04.910Z",
+  "generated_at": "2026-10-22T17:00:05.092Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -204,9 +204,9 @@
       "type": "Action Item",
       "description": "Craft Support Arrangement: Develop a Nino support arrangement involving dashboards for Amanda.",
       "owner": "Pete Callaghan, Slawomir Panic",
-      "status": "Open",
+      "status": "In Progress",
       "risk": 0,
-      "due_date": "",
+      "due_date": "Proposal being prepared for Nov transition; pending negotiation with Amanda",
       "raised": "2026-10-15",
       "meeting_source": ""
     },
@@ -215,10 +215,219 @@
       "type": "Action Item",
       "description": "Prepare Amanda Meeting: Condense existing technical reports into simple discussion points for the upcoming Q5 meeting",
       "owner": "Jason Hill, Pete Callaghan",
-      "status": "In Progress",
+      "status": "Closed",
       "risk": 0,
       "due_date": "",
       "raised": "2026-10-15",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-022",
+      "type": "Action Item",
+      "description": "Review 3-month probation review process for all team members",
+      "owner": "Ania Balicka",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-15",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-023",
+      "type": "Action Item",
+      "description": "Conduct exit interview with Pawel Wilk (last day 23rd Oct)",
+      "owner": "Ania Balicka",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "By 23rd Oct 2026",
+      "raised": "2026-10-15",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-024",
+      "type": "Action Item",
+      "description": "Pass feedback on Safety Heads (Pawel Wilk's contracting agency) via Dorado",
+      "owner": "Ania Balicka",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-15",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-025",
+      "type": "Action Item",
+      "description": "Share further details with team on Google Workspace migration (per D-005)",
+      "owner": "Jason Hill",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-15",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-026",
+      "type": "Action Item",
+      "description": "Analyse statutory HR data retention periods (UK and Polish GDPR)",
+      "owner": "Jason Hill, Ania Balicka",
+      "status": "Closed",
+      "risk": 0,
+      "due_date": "Resolved via D-006 (email retention & archiving policy), decided 2026-10-19",
+      "raised": "2026-10-15",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-027",
+      "type": "Action Item",
+      "description": "Create clothing mockups/sizing for staff merchandise (Fruit of the Loom apparel)",
+      "owner": "Simon Raitt",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-15",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-028",
+      "type": "Action Item",
+      "description": "Request office plant/wall-art quotes from City Space",
+      "owner": "Simon Raitt",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-15",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-029",
+      "type": "Action Item",
+      "description": "Research Christmas party venues",
+      "owner": "Ania Balicka",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-15",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-030",
+      "type": "Action Item",
+      "description": "Resolve Excel task-tracking file access permissions (screenshot sent to Pete)",
+      "owner": "Slawomir Panic",
+      "status": "Closed",
+      "risk": 0,
+      "due_date": "Resolved during meeting - screenshot of permissions sent to Pete",
+      "raised": "2026-10-19",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-031",
+      "type": "Action Item",
+      "description": "Draft standard company sales pitch for recruitment use",
+      "owner": "Simon Raitt",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-19",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-032",
+      "type": "Action Item",
+      "description": "Manage recruitment/interview process for new software engineer candidate",
+      "owner": "Ania Balicka",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-19",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-033",
+      "type": "Action Item",
+      "description": "Configure 2 IDs in HubSpot Creative (email migration)",
+      "owner": "Jason Hill",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-19",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-034",
+      "type": "Action Item",
+      "description": "Submit cost summary for Google Workspace Business Standard upgrade",
+      "owner": "Jason Hill",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-19",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-035",
+      "type": "Action Item",
+      "description": "Estimate cloud licence costs for training so participants can complete exercises directly",
+      "owner": "Pete Callaghan, Slawomir Panic",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-19",
+      "meeting_source": ""
+    },
+    {
+      "id": "D-006",
+      "type": "Decision",
+      "description": "Email retention and archiving policy: company email accounts are company property; private emails/CVs/contracts deleted after 1 year; departed staff accounts archived via extra paid account",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-10-19",
+      "meeting_source": ""
+    },
+    {
+      "id": "D-007",
+      "type": "Decision",
+      "description": "Two-stage recruitment process established: HR/soft-skills interview, then technical interview, then presented to Craig",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-10-19",
+      "meeting_source": ""
+    },
+    {
+      "id": "D-008",
+      "type": "Decision",
+      "description": "Leadership structure for the Grind 360 engagement agreed: Pete Callaghan and Slawomir Panic to lead, supported by DevOps/AWS (Mateas), data architecture (Christo), and additional specialist support (Pavel Welz) as needed",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-10-21",
+      "meeting_source": ""
+    },
+    {
+      "id": "D-009",
+      "type": "Decision",
+      "description": "Immediate access-containment strategy agreed: lock down AWS/GitHub access and shut out the bad actor within the first day of client go-ahead, before compiling the formal audit/risk report; forensic pentesting deferred to a later-phase recommendation",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-10-21",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-036",
+      "type": "Action Item",
+      "description": "Schedule kickoff meeting for the project team once client gives formal authorization (Grind 360 engagement)",
+      "owner": "Slawomir Panic",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-21",
       "meeting_source": ""
     }
   ]
