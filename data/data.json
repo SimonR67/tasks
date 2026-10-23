@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T17:00:05.092Z",
+  "generated_at": "2026-10-23T07:00:05.648Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -336,9 +336,9 @@
       "type": "Action Item",
       "description": "Manage recruitment/interview process for new software engineer candidate",
       "owner": "Ania Balicka",
-      "status": "Open",
+      "status": "In Progress",
       "risk": 0,
-      "due_date": "Not specified in minutes",
+      "due_date": "Kiryl's technical interview scheduled Monday; Marchin pending interview and Paula's feedback; Andrej interview upcoming; Pete to consult Paula on management burden",
       "raised": "2026-10-19",
       "meeting_source": ""
     },
@@ -424,10 +424,54 @@
       "type": "Action Item",
       "description": "Schedule kickoff meeting for the project team once client gives formal authorization (Grind 360 engagement)",
       "owner": "Slawomir Panic",
+      "status": "Closed",
+      "risk": 0,
+      "due_date": "Kickoff confirmed for Monday 2 Nov 2026 (confirmed via client email from Steve Giles); team to co-locate in Vatlav",
+      "raised": "2026-10-21",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-037",
+      "type": "Action Item",
+      "description": "Follow-up email to SEND project trust head using alternative close technique (no response yet from Phil Cook)",
+      "owner": "Jason Hill",
       "status": "Open",
       "risk": 0,
       "due_date": "Not specified in minutes",
-      "raised": "2026-10-21",
+      "raised": "2026-10-22",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-038",
+      "type": "Action Item",
+      "description": "Upload this meeting's minutes to the weekly operational management folder",
+      "owner": "Pete Callaghan",
+      "status": "Closed",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-22",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-039",
+      "type": "Action Item",
+      "description": "Dev-environment / Q5 security constraint pain points",
+      "owner": "Paula, Mateusz, Pawel S",
+      "status": "Closed",
+      "risk": 0,
+      "due_date": "Already picked up by Paula, Mateusz and Pawel S.",
+      "raised": "2026-10-22",
+      "meeting_source": ""
+    },
+    {
+      "id": "D-010",
+      "type": "Decision",
+      "description": "Future weekly standups to be kept shorter, focused on high-level sales/delivery updates",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-10-22",
       "meeting_source": ""
     }
   ]
