@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T08:00:05.027Z",
+  "generated_at": "2026-10-26T18:00:04.942Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -203,10 +203,10 @@
       "id": "ACT-020",
       "type": "Action Item",
       "description": "Craft Support Arrangement: Develop a Nino support arrangement involving dashboards for Amanda.",
-      "owner": "Pete Callaghan, Slawomir Panic",
+      "owner": "Pete Callaghan, Slawomir Panic, Jason Hill",
       "status": "In Progress",
       "risk": 0,
-      "due_date": "Proposal being prepared for Nov transition; pending negotiation with Amanda",
+      "due_date": "25% reduced Nov rate proposal finalized; Jason Hill to send to Amanda for approval",
       "raised": "2026-10-15",
       "meeting_source": ""
     },
@@ -259,7 +259,7 @@
       "type": "Action Item",
       "description": "Share further details with team on Google Workspace migration (per D-005)",
       "owner": "Jason Hill",
-      "status": "Open",
+      "status": "In Progress",
       "risk": 0,
       "due_date": "Not specified in minutes",
       "raised": "2026-10-15",
@@ -335,10 +335,10 @@
       "id": "ACT-032",
       "type": "Action Item",
       "description": "Manage recruitment/interview process for new software engineer candidate",
-      "owner": "Ania Balicka",
-      "status": "In Progress",
+      "owner": "Ania Balicka, Pete Callaghan",
+      "status": "Closed",
       "risk": 0,
-      "due_date": "Kiryl's technical interview scheduled Monday; Marchin pending interview and Paula's feedback; Andrej interview upcoming; Pete to consult Paula on management burden",
+      "due_date": "Kiryl & Andrej interviews this week (local, preferred); Marchin remote/reserve; Paula joining intro interviews with Craig; Pete checking Craig's calendar, targeting Tuesday lunchtime",
       "raised": "2026-10-19",
       "meeting_source": ""
     },
@@ -358,7 +358,7 @@
       "type": "Action Item",
       "description": "Submit cost summary for Google Workspace Business Standard upgrade",
       "owner": "Jason Hill",
-      "status": "Open",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Not specified in minutes",
       "raised": "2026-10-19",
@@ -472,6 +472,72 @@
       "risk": 0,
       "due_date": "—",
       "raised": "2026-10-22",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-040",
+      "type": "Action Item",
+      "description": "Check Kyril's availability/start date",
+      "owner": "Ania Balicka",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-26",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-041",
+      "type": "Action Item",
+      "description": "Review/supervise Hristo's timesheets for billing accuracy",
+      "owner": "Slawomir Panic",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-26",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-042",
+      "type": "Action Item",
+      "description": "Automate saving of minutes to the Drive folder",
+      "owner": "Pete Callaghan",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-10-26",
+      "meeting_source": ""
+    },
+    {
+      "id": "D-011",
+      "type": "Decision",
+      "description": "Adopt explicit end-of-meeting action/owner summaries to reduce AI-generated minute errors",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-10-26",
+      "meeting_source": ""
+    },
+    {
+      "id": "D-012",
+      "type": "Decision",
+      "description": "Prioritize Kiryl and Andrej for Q5 software engineer roles; Marchin held as remote reserve",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-10-26",
+      "meeting_source": ""
+    },
+    {
+      "id": "D-013",
+      "type": "Decision",
+      "description": "Include Paula in candidate intro interviews alongside Craig",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-10-26",
       "meeting_source": ""
     }
   ]
