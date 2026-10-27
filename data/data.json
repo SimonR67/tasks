@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T08:00:04.898Z",
+  "generated_at": "2026-10-27T18:00:04.853Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -537,6 +537,17 @@
       "status": "Decided",
       "risk": 0,
       "due_date": "—",
+      "raised": "2026-10-26",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-43",
+      "type": "Action Item",
+      "description": "Compile budget for Engineering",
+      "owner": "Pete Callaghan",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "",
       "raised": "2026-10-26",
       "meeting_source": ""
     }
