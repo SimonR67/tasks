@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T08:00:04.661Z",
+  "generated_at": "2026-10-28T18:00:04.929Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -204,7 +204,7 @@
       "type": "Action Item",
       "description": "Craft Support Arrangement: Develop a Nino support arrangement involving dashboards for Amanda.",
       "owner": "Pete Callaghan, Slawomir Panic, Jason Hill",
-      "status": "In Progress",
+      "status": "Closed",
       "risk": 0,
       "due_date": "25% reduced Nov rate proposal finalized; Jason Hill to send to Amanda for approval",
       "raised": "2026-10-15",
