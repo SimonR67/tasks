@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T08:00:04.346Z",
+  "generated_at": "2026-11-04T18:00:03.953Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -347,7 +347,7 @@
       "type": "Action Item",
       "description": "Configure 2 IDs in HubSpot Creative (email migration)",
       "owner": "Jason Hill",
-      "status": "Open",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Not specified in minutes",
       "raised": "2026-10-19",
@@ -435,7 +435,7 @@
       "type": "Action Item",
       "description": "Follow-up email to SEND project trust head using alternative close technique (no response yet from Phil Cook)",
       "owner": "Jason Hill",
-      "status": "Open",
+      "status": "In Progress",
       "risk": 0,
       "due_date": "Not specified in minutes",
       "raised": "2026-10-22",
