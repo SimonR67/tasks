@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T08:00:04.080Z",
+  "generated_at": "2026-11-11T18:00:04.361Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -292,7 +292,7 @@
       "type": "Action Item",
       "description": "Request office plant/wall-art quotes from City Space",
       "owner": "Simon Raitt",
-      "status": "Open",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Not specified in minutes",
       "raised": "2026-10-15",
@@ -325,7 +325,7 @@
       "type": "Action Item",
       "description": "Draft standard company sales pitch for recruitment use",
       "owner": "Simon Raitt",
-      "status": "Open",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Not specified in minutes",
       "raised": "2026-10-19",
