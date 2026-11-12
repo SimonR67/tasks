@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T08:00:04.791Z",
+  "generated_at": "2026-11-12T18:00:03.606Z",
   "actions": [
     {
       "id": "ACT-005",
@@ -138,7 +138,7 @@
       "type": "Action Item",
       "description": "Deactivate Martin Balaza's timesheet until new work orders assigned",
       "owner": "Slawomir Panic",
-      "status": "Open",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Not specified",
       "raised": "2026-09-24",
@@ -182,7 +182,7 @@
       "type": "Action Item",
       "description": "Plan office decor: recommend quantity/size/placement of wall prints; consult reception on installation",
       "owner": "Slawomir Panic",
-      "status": "Open",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Not specified",
       "raised": "2026-09-24",
@@ -369,7 +369,7 @@
       "type": "Action Item",
       "description": "Estimate cloud licence costs for training so participants can complete exercises directly",
       "owner": "Pete Callaghan, Slawomir Panic",
-      "status": "Open",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Not specified in minutes",
       "raised": "2026-10-19",
@@ -490,7 +490,7 @@
       "type": "Action Item",
       "description": "Review/supervise Hristo's timesheets for billing accuracy",
       "owner": "Slawomir Panic",
-      "status": "Open",
+      "status": "Closed",
       "risk": 0,
       "due_date": "Not specified in minutes",
       "raised": "2026-10-26",
@@ -549,6 +549,83 @@
       "risk": 0,
       "due_date": "",
       "raised": "2026-10-26",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-044",
+      "type": "Action Item",
+      "description": "book Governance meeting end Nov start Dec for Q5",
+      "owner": "Pete Callaghan",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "2026-11-12",
+      "raised": "2026-11-12",
+      "meeting_source": ""
+    },
+    {
+      "id": "D-014",
+      "type": "Decision",
+      "description": "Establishment of quarterly product strategy days (brainstorming AM, decisions PM) on internal products",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-11-05",
+      "meeting_source": ""
+    },
+    {
+      "id": "D-015",
+      "type": "Decision",
+      "description": "Two-step timesheet verification (line manager + PM) before invoicing, backed by pay withholding for late submission",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-11-05",
+      "meeting_source": ""
+    },
+    {
+      "id": "D-016",
+      "type": "Decision",
+      "description": "Soft Papaya migration restricted short-term to sales outreach/contracted work; Grind 360 stays on existing platform",
+      "owner": "—",
+      "status": "Decided",
+      "risk": 0,
+      "due_date": "—",
+      "raised": "2026-11-05",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-045",
+      "type": "Action Item",
+      "description": "Schedule first quarterly strategy day",
+      "owner": "The group",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "Not specified in minutes",
+      "raised": "2026-11-05",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-046",
+      "type": "Action Item",
+      "description": "Schedule Philip's second-stage technical interview",
+      "owner": "Ania Balicka",
+      "status": "Closed",
+      "risk": 0,
+      "due_date": "Completed in meeting",
+      "raised": "2026-11-05",
+      "meeting_source": ""
+    },
+    {
+      "id": "ACT-047",
+      "type": "Action Item",
+      "description": "Schedule brainstorming meeting (post-holiday) on storage for engineering resource role definitions and documentation, following the SoftPapaya rollout pause (D-016)",
+      "owner": "Jason Hill",
+      "status": "Open",
+      "risk": 0,
+      "due_date": "TBC - post Pete's holiday",
+      "raised": "2026-11-12",
       "meeting_source": ""
     }
   ]
